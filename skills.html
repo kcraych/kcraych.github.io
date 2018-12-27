@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/home_style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/base_style.css">
+    <link rel="stylesheet" href="./css/theme_style.css">
+    <link rel="stylesheet" href="./css/layout_style.css">
     <link rel="stylesheet" href="./css/nav_style.css">
     <link rel="stylesheet" href="./css/skills_style.css">
 
@@ -15,101 +17,73 @@
 
   <body>
     <!--Page Content-->
-    <div class="container-flex">
+    <div class="container-full l-flx-tl-h">
 
       <!--Naviagation-->
-      <div class="navigation">
-        <div class="nav-title">
-          <a href="home.html"><img src="./images/profile/katie.jpg" alt=""></a>
-          <p><span>KATIE CRAYCHEE</span></p>
-          <p>JUNIOR DEVELOPER</p>
-        </div>
-        <ul class="nav-links">
-          <a href="./skills.html"><li class="nav-link-item">SKILLS</li></a>
-          <a href="./projects.html"><li class="nav-link-item">PROJECTS</li></a><br><br><br>
-          <a href="./blog.html"><li class="nav-link-item">BLOG</li></a>
-          <a href="./about-me.html"><li class="nav-link-item">ABOUT ME</li></a>
+      <div class="container-nav l-flx-tc-v bg-blue txt-white txt-md">
+        <a class="l-flx-cc-v" href="home.html">
+          <img class="nav-pic" src="./images/profile/katie.jpg" alt="">
+        </a>
+        <h2>KATIE CRAYCHEE</h3>
+        <p class="txt-md">JUNIOR DEVELOPER</p>
+        <ul class="nav-links l-flx-tl-v txt-sm">
+          <a href="./skills.html"><li>SKILLS</li></a>
+          <a href="./projects.html"><li>PROJECTS</li></a><br><br><br>
+          <a href="./blog.html"><li>BLOG</li></a>
+          <a href="./about-me.html"><li>ABOUT ME</li></a>
         </ul>
       </div>
       <!--/Naviagation-->
 
       <!--Skills Section-->
-      <div class="section-container">
-        <div class="section-intro">
-          <p><span>SKILLS</span></p><br>
-          <p>With a background in mathematics, my approach to coding is to find solutions which effectively balance
-            accuracy with efficiency.  I take much care to ensure my work provides flexibility for ongoing development
-            through dynamic and well-structured code.</p><br>
-          <p>Below outlines my current skills and offerings, plus I am always in pursuit of learning new skills.
-            Please don't hesitate to reach out if you have any questions!</p><br><br>
-        </div>
-        <div class="section-content">
-          <div class="skills-container">
-            <div class="skills-type">
-              FRONT-END DEVELOPMENT
-            </div>
-            <div class="skills-content">
-              <div class="skills-name">
-                <div class="skills-icon"><img src="./images/skills/html.png" alt=""></div>
-                <div class="skills-detail">
-                  <ul>
-                    <li>Refactoring of existing webpage code for fluidity and future-proofing.</li>
-                    <li>Develop with bootstrap, supporting customized designs.</li>
-                  </ul>
-                </div>
+      <div class="container-main l-flx-tl-v">
+        <p class="txt-blue txt-lg">SKILLS</p><br>
+        <p>With a background in mathematics, my approach to coding is to find solutions which effectively balance
+          accuracy with efficiency.  I take much care to ensure my work provides flexibility for ongoing development
+          through dynamic and well-structured code.</p><br>
+        <p>Below outlines my current skills and offerings, plus I am always in pursuit of learning new skills.
+          Please don't hesitate to reach out if you have any questions!</p><br><br>
+        <div class="skills-section l-flx-tl-v">
+          <h3 class="skills-section-type bg-blue txt-white">FRONT-END DEVELOPMENT</h3>
+          <div class="skills-icons l-flx-cc-h">
+              <div class="l-flx-cc-v">
+                <img src="./images/skills/html.png" alt="">
+                <p>HTML</p>
               </div>
-              <div class="skills-name">
-                <div class="skills-icon"><img src="./images/skills/css.png" alt=""></div>
-                <div class="skills-detail">
-                  <ul>
-                    <li>detail</li>
-                    <li>detail</li>
-                    <li>detail</li>
-                  </ul>
-                </div>
+              <div class="l-flx-cc-v">
+                <img src="./images/skills/css.png" alt="">
+                <p>CSS</p>
               </div>
-              <div class="skills-name">
-                <div class="skills-icon"><img src="./images/skills/js.png" alt=""></div>
-                <div class="skills-detail">
-                  <ul>
-                    <li>detail</li>
-                    <li>detail</li>
-                    <li>detail</li>
-                  </ul>
-                </div>
+              <div class="l-flx-cc-v">
+                <img src="./images/skills/js.png" alt="">
+                <p>Javascript</p>
               </div>
-            </div>
           </div>
-          <div class="skills-container">
-            <div class="skills-type">
-              BACK-END DEVELOPMENT
-            </div>
-            <div class="skills-content">
-              <div class="skills-name">
-                <div class="skills-icon"><img src="./images/skills/python.svg.png" alt=""></div>
-                <div class="skills-detail">
-                  <ul>
-                    <li>detail</li>
-                    <li>detail</li>
-                    <li>detail</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="skills-name">
-                <div class="skills-icon"><img src="./images/skills/c-sharp.png" alt=""></div>
-                <div class="skills-detail">
-                  <ul>
-                    <li>detail</li>
-                    <li>detail</li>
-                    <li>detail</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <div class="skills-details l-flx-tl-v">
+            <ul>
+              <li>Refactoring of existing webpage code for fluidity and future-proofing.</li>
+              <li>Develop with bootstrap, supporting customized designs.</li>
+            </ul>
           </div>
         </div>
+        <div class="skills-section l-flx-tl-v">
+          <h3 class="skills-section-type bg-blue txt-white">BACK-END DEVELOPMENT</h3>
+          <div class="skills-icons l-flx-cc-h">
+              <div class="l-flx-cc-v">
+                <img src="./images/skills/python.svg.png" alt="">
+                <p>Python</p>
+              </div>
+              <div class="l-flx-cc-v">
+                <img src="./images/skills/c-sharp.png" alt="">
+                <p>C#</p>
+              </div>
+          </div>
+          <div class="skills-details l-flx-tl-v">
+            
+          </div>
         </div>
-        <div class="fill-container"></div>
+      </div>
+      <div class="container-fill l-flx-tl-v"></div>
 
       <!--/Skills Section-->
 

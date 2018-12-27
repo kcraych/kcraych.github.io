@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.l-flx-cc-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:  column;
+}
+
+.l-flx-cc-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-flx-tl-v {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction:  column;
+}
+
+.l-flx-tl-h {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.l-flx-tc-v {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction:  column;
+}

@@ -1,0 +1,41 @@
+/*-----------------------
+Full Page Container
+-----------------------*/
+.container-full {
+    background: url(../images/backgrounds/mountains/mountains2.jpg) no-repeat 50% 50%;
+    background-size: 100%;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;   
+}
+
+/*-----------------------
+Navigation Pane Container
+(used on every page)
+-----------------------*/
+.container-nav {
+    width: 25%;
+    height: 100%;
+    padding: 3%;
+}
+
+/*-----------------------
+Main Page Section Container
+(used on every page, excluding Home page)
+-----------------------*/
+.container-main {
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    padding:3%;
+}
+
+/*-----------------------
+Fill Pane Container
+(used on every page, excluding Home page)
+-----------------------*/
+.container-fill {
+    background-color: rgb(231, 221, 221);
+    width: 15%;
+    height: 100%;
+}

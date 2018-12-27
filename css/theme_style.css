@@ -1,0 +1,35 @@
+/*-------------------
+Background styles
+--------------------*/
+.bg-blue {
+    background-color: #114258d2;
+    opacity: 1.65;
+}
+
+/*-------------------
+Text styles
+--------------------*/
+/*---colors---*/
+.txt-white {
+    color: white;
+}
+
+.txt-blue {
+    color: #09374dd2;
+}
+
+/*---sizes---*/
+.txt-sm {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+}
+
+.txt-md {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+}
+
+.txt-lg {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+}
