@@ -1,19 +1,57 @@
+/*-----------------
+Common Attributes
+-------------------*/
 .nav-pic {
-    width: 60%;
+    display: flex;
+    margin: 10px
+}
+
+.nav-pic img {
+    align-self: center;
+    width: 100%;
     height: auto;
     border-radius: 20%;
-    margin: 5%
 }
 
-.nav-links {
-    width: 100%;
-    list-style: none;
-    margin-top: 60px;
+.nav-credits {
+    display: flex;
+    flex-direction: column;
 }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 3px 10px;
+/*------------------
+Laptop
+-------------------*/
+@media screen and (min-width: 800px) {
+    .nav-pic {
+        justify-content: center;
+        width: 60%
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        list-style: none;
+        margin-top: 60px;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 3px 10px;
+    }
+}
+
+/*------------------    
+Phones
+-------------------*/
+@media screen and (max-width: 799px) {
+    .nav-pic {
+        width: 30%;
+    }
+
+    .nav-links {
+        width: 0;
+    }
 }
