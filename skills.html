@@ -21,70 +21,95 @@
 
       <!--Naviagation-->
       <div class="container-nav bg-blue txt-white txt-md">
-        <a class="nav-pic" href="home.html">
-          <img src="./images/profile/katie.jpg" alt="">
-        </a>
-        <h2>KATIE CRAYCHEE</h3>
-        <p class="txt-md">JUNIOR DEVELOPER</p>
-        <ul class="nav-links txt-sm">
-          <a href="./skills.html"><li>SKILLS</li></a>
-          <a href="./projects.html"><li>PROJECTS</li></a>
-          <a href="./blog.html"><li>BLOG</li></a>
-          <a href="./about-me.html"><li>ABOUT ME</li></a>
-        </ul>
+        <div class="nav-profile">
+          <a class="nav-pic" href="home.html">
+            <img src="./images/profile/katie.jpg" alt="">
+          </a>
+          <div class="nav-credits">
+            <p><span>KATIE CRAYCHEE</span><br>
+                JUNIOR DEVELOPER</p>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <div class="menu-collapse">
+            <input type="checkbox" id="menu">
+            <label for="menu">MENU</label>
+          </div>
+          <ul class="menu-content">
+            <li class="menu-item">
+              <a class="menu-link" href="./skills.html">SKILLS</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="./projects.html">PROJECTS</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="./blog.html">BLOG</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-item" href="./about-me.html">ABOUT ME</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <!--/Naviagation-->
 
       <!--Skills Section-->
-      <div class="container-main l-flx-tl-v">
-        <p class="txt-blue txt-lg">SKILLS</p><br>
-        <p>With a background in mathematics, my approach to coding is to find solutions which effectively balance
-          accuracy with efficiency.  I take much care to ensure my work provides flexibility for ongoing development
-          through dynamic and well-structured code.</p><br>
-        <p>Below outlines my current skills and offerings, plus I am always in pursuit of learning new skills.
-          Please don't hesitate to reach out if you have any questions!</p><br><br>
-        <div class="skills-section l-flx-tl-v">
-          <h3 class="skills-section-type bg-blue txt-white">FRONT-END DEVELOPMENT</h3>
-          <div class="skills-icons l-flx-cc-h">
-              <div class="l-flx-cc-v">
-                <img src="./images/skills/html.png" alt="">
-                <p>HTML</p>
-              </div>
-              <div class="l-flx-cc-v">
-                <img src="./images/skills/css.png" alt="">
-                <p>CSS</p>
-              </div>
-              <div class="l-flx-cc-v">
-                <img src="./images/skills/js.png" alt="">
-                <p>Javascript</p>
-              </div>
+      <div class="container-main">
+        <div class="container-content">
+          <p class="txt-blue txt-lg">SKILLS</p><br>
+          <p>With a background in mathematics, my approach to coding is to find solutions which effectively balance
+            accuracy with efficiency.  I take much care to ensure my work provides flexibility for ongoing development
+            through dynamic and well-structured code.</p><br>
+          <p>Below outlines my current skills and offerings, plus I am always in pursuit of learning new skills.
+            Please don't hesitate to reach out if you have any questions!</p><br><br>
+          <div class="skills-section l-flx-tl-v">
+            <h3 class="skills-section-type bg-blue txt-white">FRONT-END DEVELOPMENT</h3>
+            <div class="skills-icons l-flx-cc-h">
+                <div class="l-flx-cc-v">
+                  <img src="./images/skills/html.png" alt="">
+                  <p>HTML</p>
+                </div>
+                <div class="l-flx-cc-v">
+                  <img src="./images/skills/css.png" alt="">
+                  <p>CSS</p>
+                </div>
+                <div class="l-flx-cc-v">
+                  <img src="./images/skills/js.png" alt="">
+                  <p>Javascript</p>
+                </div>
+            </div>
+            <div class="skills-details l-flx-tl-v">
+              <ul>
+                <li>Refactoring of existing webpage code for fluidity and future-proofing.</li>
+                <li>Develop with bootstrap, supporting customized designs.</li>
+              </ul>
+            </div>
           </div>
-          <div class="skills-details l-flx-tl-v">
-            <ul>
-              <li>Refactoring of existing webpage code for fluidity and future-proofing.</li>
-              <li>Develop with bootstrap, supporting customized designs.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="skills-section l-flx-tl-v">
-          <h3 class="skills-section-type bg-blue txt-white">BACK-END DEVELOPMENT</h3>
-          <div class="skills-icons l-flx-cc-h">
-              <div class="l-flx-cc-v">
-                <img src="./images/skills/python.svg.png" alt="">
-                <p>Python</p>
-              </div>
-              <div class="l-flx-cc-v">
-                <img src="./images/skills/c-sharp.png" alt="">
-                <p>C#</p>
-              </div>
-          </div>
-          <div class="skills-details l-flx-tl-v">
-            
+          <div class="skills-section l-flx-tl-v">
+            <h3 class="skills-section-type bg-blue txt-white">BACK-END DEVELOPMENT</h3>
+            <div class="skills-icons l-flx-cc-h">
+                <div class="l-flx-cc-v">
+                  <img src="./images/skills/python.svg.png" alt="">
+                  <p>Python</p>
+                </div>
+                <div class="l-flx-cc-v">
+                  <img src="./images/skills/c-sharp.png" alt="">
+                  <p>C#</p>
+                </div>
+                <div class="l-flx-cc-v">
+                  <img src="./images/skills/DB.jpg" alt="">
+                  <p>SQL</p>
+                </div>
+            </div>
+            <div class="skills-details l-flx-tl-v">
+                <ul>
+                  <li>Algorithm complexity analysis for efficiency assurance.</li>
+                  <li>Database creation, integration, and management.</li>
+                </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container-fill l-flx-tl-v"></div>
-
       <!--/Skills Section-->
 
 

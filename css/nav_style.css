@@ -1,11 +1,6 @@
 /*-----------------
 Common Attributes
 -------------------*/
-.nav-pic {
-    display: flex;
-    margin: 10px
-}
-
 .nav-pic img {
     align-self: center;
     width: 100%;
@@ -18,40 +13,114 @@ Common Attributes
     flex-direction: column;
 }
 
+.nav-credits p {
+    font-size: 0.8rem;
+}
+
+.nav-credits p span {
+    font-size: 1.0rem;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-collapse {
+    display: flex;
+    flex-direction: column;
+}
+
+input#menu {
+    display: none;
+}
+
+.menu-content {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.menu-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 3px 10px;
+}
+
+.menu-link a {
+    cursor: pointer;
+}
+
 /*------------------
 Laptop
 -------------------*/
-@media screen and (min-width: 800px) {
-    .nav-pic {
-        justify-content: center;
-        width: 60%
-    }
-
-    .nav-links {
+@media screen and (min-width: 900px) {
+    .nav-profile {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        list-style: none;
-        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .nav-pic {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+        margin-top: 30px;
     }
 
-    .nav-links a {
-        color: #fff;
-        text-decoration: none;
-        cursor: pointer;
-        padding: 3px 10px;
+    .nav-menu {
+        margin-top: 60px;
+        margin-left: 30px;
+        width: 100%;
+    }
+
+    .menu-collapse label {
+        display: none;
     }
 }
+
+
+/*------------------
+Tablet
+-------------------*/
+@media screen and (min-width: 500px) and (max-width: 899px) {
+    
+}
+
 
 /*------------------    
 Phones
 -------------------*/
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 899px) {
+    .nav-profile {
+        display: flex;
+        align-items: center;
+    }
+    
     .nav-pic {
-        width: 30%;
+        width: 80px;
+        margin: 10px;
     }
 
-    .nav-links {
-        width: 0;
+    .menu-collapse label {
+        cursor: pointer;
+    }
+
+    .menu-content {
+        list-style: none;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 0 0 50px;
+    }
+
+    input:checked +label {
+        background-image: url(close.png);
+    }
+
+    /* Toggle Effect */
+    input:checked ~ .menu-content {
+        max-height: 100%;
     }
 }

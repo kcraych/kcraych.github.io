@@ -1,11 +1,46 @@
 .container-home {
-    width: 75%;
-    height: 100%;
-    padding: 1.5% 17% 0% 1%;
+    display: flex;
     font-weight: 500;
     text-shadow: 2px 2px 3px lightslategray;
 }
 
 .container-home span {
     font-weight: 600;
+}
+
+/*------------------
+Laptop
+-------------------*/
+@media screen and (min-width: 900px) {
+    .container-home {
+        width: 65%;
+        padding: 20px;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+}
+
+/*------------------
+Tablet
+-------------------*/
+@media screen and (min-width: 500px) and (max-width: 899px) {
+    .container-home {
+        width: 75%;
+        padding: 10px;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+}
+
+/*------------------
+Phone
+-------------------*/
+@media screen and (max-width: 499px) {
+    .container-home {
+        text-align: center;
+        width: 95%;
+        padding: 10px;
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
 }
