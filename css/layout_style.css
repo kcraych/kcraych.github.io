@@ -34,7 +34,7 @@ Laptop
 @media screen and (min-width: 900px) {
     .container-nav {
         flex-direction: column;
-        width: 250px;
+        width: 20%;
     }
 
     .container-main {

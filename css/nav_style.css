@@ -22,6 +22,17 @@ Common Attributes
     font-weight: 600;
 }
 
+.nav-contacts {
+    display: flex;
+    height: auto;
+}
+
+.nav-contacts img {
+    align-self: center;
+    margin: 3px 5px;
+    max-width: 20px;
+}
+
 /*------Menu Secion------*/
 .nav-menu {
     display: flex;
@@ -62,6 +73,10 @@ Laptop
     .nav-pic {
         width: 60%;
         margin-top: 30px;
+    }
+
+    .nav-contacts {
+        justify-content: center;
     }
 
 /*------Menu Secion------*/
