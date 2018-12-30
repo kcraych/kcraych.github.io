@@ -4,11 +4,10 @@ Common Attributes
 .container-full {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
     background: url(../images/backgrounds/mountains/mountains2.jpg) no-repeat center center fixed;
     background-size: cover;
     width: 100vw;
+    min-height: 100vh;
 }
 
 .container-nav {
@@ -27,20 +26,15 @@ Common Attributes
     display: flex;
     flex-direction: column;
     background-color: #fff;
-}
+    }
 
 /*-----------------------
 Laptop
 -----------------------*/
 @media screen and (min-width: 900px) {
-    .container-full {
-        height: 100vh;  
-    }
-    
     .container-nav {
         flex-direction: column;
         width: 250px;
-        height: 100%;
     }
 
     .container-main {
@@ -49,7 +43,7 @@ Laptop
 
     .container-content {
         min-height: 100%;
-        max-width: 700px;
+        max-width: 900px;
         padding: 30px;
     }
 }
@@ -60,14 +54,11 @@ Phones/tablets
 @media screen and (max-width: 899px) {
     .container-full {
         flex-direction: column;
-        min-height: 100vh;  
     }
     
     .container-nav {
         justify-content: space-between;
-        width: 100%;
         height: 120px;
-        padding: 10px;
     }
 
     .container-main {

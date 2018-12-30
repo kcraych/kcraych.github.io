@@ -1,4 +1,6 @@
 .skills-section {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     margin-bottom: 40px;
@@ -11,23 +13,18 @@
 }
 
 .skills-icons {
+    display: flex;
     justify-content: space-evenly;
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .skills-icons img {
     max-width: 50px;
-    width: auto;
-    margin: 5px;
-}
-
-.skill-icons p {
-     text-align: center;
 }
 
 .skills-details {
-    flex: 1;
     padding-left: 30px;
 }

@@ -1,10 +1,10 @@
 /*-----------------
 Common Attributes
 -------------------*/
+/*------Profile Secion------*/
 .nav-pic img {
     align-self: center;
     width: 100%;
-    height: auto;
     border-radius: 20%;
 }
 
@@ -22,12 +22,8 @@ Common Attributes
     font-weight: 600;
 }
 
+/*------Menu Secion------*/
 .nav-menu {
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-collapse {
     display: flex;
     flex-direction: column;
 }
@@ -55,21 +51,20 @@ input#menu {
 Laptop
 -------------------*/
 @media screen and (min-width: 900px) {
+/*------Profile Secion------*/
     .nav-profile {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         text-align: center;
     }
     
     .nav-pic {
-        display: flex;
-        justify-content: center;
         width: 60%;
         margin-top: 30px;
     }
 
+/*------Menu Secion------*/
     .nav-menu {
         margin-top: 60px;
         margin-left: 30px;
@@ -81,19 +76,11 @@ Laptop
     }
 }
 
-
-/*------------------
-Tablet
--------------------*/
-@media screen and (min-width: 500px) and (max-width: 899px) {
-    
-}
-
-
 /*------------------    
-Phones
+Phones/tablets
 -------------------*/
 @media screen and (max-width: 899px) {
+/*------Profile Secion------*/
     .nav-profile {
         display: flex;
         align-items: center;
@@ -104,6 +91,7 @@ Phones
         margin: 10px;
     }
 
+/*------Menu Secion------*/
     .menu-collapse label {
         cursor: pointer;
     }
@@ -112,14 +100,8 @@ Phones
         list-style: none;
         max-height: 0;
         overflow: hidden;
-        padding: 0 0 0 50px;
     }
 
-    input:checked +label {
-        background-image: url(close.png);
-    }
-
-    /* Toggle Effect */
     input:checked ~ .menu-content {
         max-height: 100%;
     }
