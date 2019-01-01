@@ -15,6 +15,7 @@ Common Attributes
 
 .nav-credits p {
     font-size: 0.8rem;
+    margin: 0;
 }
 
 .nav-credits p span {
@@ -36,14 +37,10 @@ Common Attributes
 /*------Menu Secion------*/
 .nav-menu {
     display: flex;
-    flex-direction: column;
-}
-
-input#menu {
-    display: none;
 }
 
 .menu-content {
+    display: flex;  
     list-style: none;
     font-size: 0.9rem;
 }
@@ -79,23 +76,28 @@ Laptop
         justify-content: center;
     }
 
-/*------Menu Secion------*/
+/*------Menu Section------*/
     .nav-menu {
+        flex-direction: column;
         margin-top: 60px;
         margin-left: 30px;
         width: 100%;
     }
 
-    .menu-collapse label {
+    .menu-collapse {
         display: none;
+    }
+
+    .menu-content {
+        flex-direction: column;
     }
 }
 
-/*------------------    
-Phones/tablets
+/*------------------
+Phone & Tablet
 -------------------*/
 @media screen and (max-width: 899px) {
-/*------Profile Secion------*/
+    /*------Profile Secion------*/
     .nav-profile {
         display: flex;
         align-items: center;
@@ -105,19 +107,46 @@ Phones/tablets
         width: 80px;
         margin: 10px;
     }
+    
+    /*------Menu Section------*/
+    .nav-menu {
+        justify-content: space-evenly;
+    }
+}
+
+/*------------------
+Tablet
+-------------------*/
+@media screen and (min-width: 500px) and (max-width: 899px) {
+    /*------Menu Section------*/
+    .menu-collapse {
+        display: none;
+    }
+}
+
+
+/*------------------    
+Phones
+-------------------*/
+@media screen and (max-width: 499px) {
+/*------Profile Secion------*/
 
 /*------Menu Secion------*/
-    .menu-collapse label {
-        cursor: pointer;
+    .nav-menu {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .menu-collapse {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-collapse a {
+        width: 100%;
     }
 
     .menu-content {
-        list-style: none;
-        max-height: 0;
-        overflow: hidden;
-    }
-
-    input:checked ~ .menu-content {
-        max-height: 100%;
+        display: none;
     }
 }

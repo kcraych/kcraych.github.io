@@ -49,7 +49,7 @@ Laptop
 }
 
 /*-----------------------
-Phones/tablets
+Phones & Tablets
 -----------------------*/
 @media screen and (max-width: 899px) {
     .container-full {
@@ -57,7 +57,6 @@ Phones/tablets
     }
     
     .container-nav {
-        justify-content: space-between;
         height: 120px;
     }
 
@@ -68,5 +67,23 @@ Phones/tablets
     .container-content {
         width: 100%;
         padding: 10px;
+    }
+}
+
+/*-----------------------
+Tablets
+-----------------------*/
+@media screen and (min-width: 500px) and (max-width: 899px) {
+    .container-nav {
+        flex-direction: column;
+    }
+}
+
+/*-----------------------
+Phones
+-----------------------*/
+@media screen and (min-width: 499px) {
+    .container-nav {
+        justify-content: space-between;
     }
 }

@@ -15,7 +15,7 @@ Laptop
 -------------------*/
 @media screen and (min-width: 900px) {
     .container-home {
-        width: 65%;
+        max-width: 560px;
         padding: 20px;
         font-size: 1.3rem;
         line-height: 1.6rem;
@@ -23,21 +23,9 @@ Laptop
 }
 
 /*------------------
-Tablet
+Phones & Tablet
 -------------------*/
-@media screen and (min-width: 500px) and (max-width: 899px) {
-    .container-home {
-        width: 75%;
-        padding: 10px;
-        font-size: 1.1rem;
-        line-height: 1.4rem;
-    }
-}
-
-/*------------------
-Phone
--------------------*/
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 899px) {
     .container-home {
         text-align: center;
         width: 95%;
