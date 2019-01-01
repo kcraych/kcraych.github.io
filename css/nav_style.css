@@ -37,22 +37,35 @@ Common Attributes
 /*------Menu Secion------*/
 .nav-menu {
     display: flex;
+    flex-direction: column;
 }
 
-.menu-content {
+.nav-menu-content {
     display: flex;  
     list-style: none;
-    font-size: 0.9rem;
 }
 
 .menu-item a {
     color: #fff;
+    font-size: 0.9rem;
     text-decoration: none;
     padding: 3px 10px;
 }
 
 .menu-link a {
     cursor: pointer;
+}
+
+  /*-----Expandable nav-----*/
+.nav-menu-content {
+    overflow: hidden;
+    margin: 0;
+}
+  
+.nav-menu-icon .icon {
+    display: none;
+    height: 20px;
+    width: 40px;
 }
 
 /*------------------
@@ -78,18 +91,17 @@ Laptop
 
 /*------Menu Section------*/
     .nav-menu {
-        flex-direction: column;
         margin-top: 60px;
         margin-left: 30px;
         width: 100%;
     }
 
-    .menu-collapse {
+    .nav-menu-icon {
         display: none;
     }
 
-    .menu-content {
-        flex-direction: column;
+    .nav-menu-content {
+        flex-direction: column;  
     }
 }
 
@@ -119,7 +131,7 @@ Tablet
 -------------------*/
 @media screen and (min-width: 500px) and (max-width: 899px) {
     /*------Menu Section------*/
-    .menu-collapse {
+    .nav-menu-icon {
         display: none;
     }
 }
@@ -132,21 +144,36 @@ Phones
 /*------Profile Secion------*/
 
 /*------Menu Secion------*/
-    .nav-menu {
-        justify-content: flex-start;
-        align-items: flex-start;
+    .nav-menu-content {
+        flex-direction: column;  
     }
 
-    .menu-collapse {
+/*-----Expandable Menu-----*/
+    .nav-menu-icon {
         display: flex;
-        flex-direction: column;
     }
 
-    .menu-collapse a {
-        width: 100%;
-    }
-
-    .menu-content {
+    .nav-menu-content li {
         display: none;
+    }
+
+    .nav-menu-icon a.icon {
+      float: right;
+      display: block;
+    }
+
+    .nav-menu-content.responsive {
+        position: relative;
+    }
+
+    .nav-menu-icon.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav-menu-content.responsive li {
+      float: none;
+      display: block;
+      text-align: left;
     }
 }

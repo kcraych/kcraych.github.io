@@ -58,6 +58,7 @@ Phones & Tablets
     
     .container-nav {
         height: 120px;
+        justify-content: space-between;
     }
 
     .container-main {
@@ -83,7 +84,5 @@ Tablets
 Phones
 -----------------------*/
 @media screen and (min-width: 499px) {
-    .container-nav {
-        justify-content: space-between;
-    }
+
 }
