@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/base_style.css">
     <link rel="stylesheet" href="./css/theme_style.css">
@@ -39,24 +43,25 @@
           </div>
         </div>
         <div class="nav-menu">
-          <div class="menu-collapse">
-            <input type="checkbox" id="menu">
-            <label for="menu">MENU</label>
+          <div class="nav-menu-icon">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
           </div>
-          <ul class="menu-content">
-            <li class="menu-item">
-              <a class="menu-link" href="./skills.html">SKILLS</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="./projects.html">PROJECTS</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link" href="./blog.html">BLOG</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-item" href="./about-me.html">ABOUT ME</a>
-            </li>
-          </ul>
+            <ul class="nav-menu-content" id="my-menu-collapse">
+              <li class="menu-item">
+                <a class="menu-link" href="./skills.html">SKILLS</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="./projects.html">PROJECTS</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="./blog.html">BLOG</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-item" href="./about-me.html">ABOUT ME</a>
+              </li>
+            </ul>
         </div>
       </div>
       <!--/Naviagation-->
@@ -70,9 +75,24 @@
       </div>
       <!--/Projects Section-->
 
-
     </div>
     <!--/Page Content-->
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
+    <script>
+      function myFunction() {
+        var x = document.getElementById("my-menu-collapse");
+        if (x.className === "nav-menu-content") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav-menu-content";
+        }
+      }
+    </script>
 
   </body>
 </html>
