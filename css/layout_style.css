@@ -19,13 +19,13 @@ Common Attributes
 .container-main {
     display: flex;
     flex: 1;
-    background-color: rgb(245, 231, 231);
 }
 
 .container-content {
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    opacity: 1;
     }
 
 /*-----------------------

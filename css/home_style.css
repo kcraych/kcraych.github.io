@@ -2,18 +2,13 @@
 Common Attributes
 -------------------*/
 .container-home {
-    display: flex;
-    justify-content: center;    
+    display: flex;  
     opacity: 0.3;
     font-weight: 500;
 }
 
 .container-home span {
     font-weight: 600;
-}
-
-.jumbotron {
-    text-align: center;
 }
 
 /*------------------
@@ -23,15 +18,8 @@ Laptop
     .container-home {
         flex: 1;
         padding: 20px;
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-    }
-
-    .jumbotron {
-        max-width: 650px;
-        max-height: 5rem;
-        padding: 10px;
-        margin: 0;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
     }
 }
 

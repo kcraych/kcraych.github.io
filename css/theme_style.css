@@ -3,7 +3,12 @@ Background styles
 --------------------*/
 .bg-blue {
     background-color: #114258d2;
-    opacity: 1.65;
+    opacity: 1;
+}
+
+.bg-dk-gray {
+    background-color: #000000c4;
+    opacity: .85;
 }
 
 /*-------------------
@@ -16,6 +21,10 @@ Text styles
 
 .txt-blue {
     color: #09374dd2;
+}
+
+.txt-dk-gray {
+    color: #373838d2;
 }
 
 /*---sizes---*/
