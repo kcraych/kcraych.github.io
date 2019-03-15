@@ -3,8 +3,13 @@ Common Attributes
 -------------------*/
 .container-home {
     display: flex;  
-    opacity: 0.3;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.15);
     font-weight: 500;
+}
+
+.home-content p {
+    transform: scale(1.0, 0.8);
 }
 
 .container-home span {

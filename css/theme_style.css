@@ -3,12 +3,10 @@ Background styles
 --------------------*/
 .bg-blue {
     background-color: #114258d2;
-    opacity: 1;
 }
 
 .bg-dk-gray {
-    background-color: #000000c4;
-    opacity: .85;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*-------------------
