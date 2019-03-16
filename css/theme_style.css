@@ -1,10 +1,6 @@
 /*-------------------
 Background styles
 --------------------*/
-.bg-blue {
-    background-color: #114258d2;
-}
-
 .bg-dk-gray {
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -15,14 +11,6 @@ Text styles
 /*---colors---*/
 .txt-white {
     color: white;
-}
-
-.txt-blue {
-    color: #09374dd2;
-}
-
-.txt-dk-gray {
-    color: #373838d2;
 }
 
 /*---sizes---*/

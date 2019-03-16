@@ -21,10 +21,55 @@ Common Attributes
     flex: 1;
 }
 
-.container-content {
+.main-content {
     display: flex;
     flex-direction: column;
+    background-color: rgb(235, 232, 232);
+}
+
+.content-header {
+    text-shadow: 2px 2px 2px lightgray;
+}
+
+.content-intro {
+    margin: 10px 0px;
+}
+
+    .content-intro span {
+        font-weight: 800;
+    }
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 20px 10px;
+    box-shadow: 3px 3px 10px gray;
     background-color: #fff;
+}
+
+    .card-header {
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .card-icons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+        .card-icons img {
+            max-width: 50px;
+        }
+
+    .card-details {
+        padding: 10px;
     }
 
 /*-----------------------
@@ -40,7 +85,7 @@ Laptop
         min-height: 100%;
     }
 
-    .container-content {
+    .main-content {
         min-height: 100%;
         max-width: 900px;
         padding: 30px;
@@ -64,7 +109,7 @@ Phones & Tablets
         width: 100%;
     }
 
-    .container-content {
+    .main-content {
         width: 100%;
         padding: 10px;
     }
