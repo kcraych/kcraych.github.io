@@ -124,56 +124,11 @@ Phone & Tablet
     .nav-menu {
         justify-content: space-evenly;
     }
-}
 
-/*------------------
-Tablet
--------------------*/
-@media screen and (min-width: 500px) and (max-width: 899px) {
-    /*------Menu Section------*/
-    .nav-menu-icon {
-        display: none;
-    }
-}
-
-
-/*------------------    
-Phones
--------------------*/
-@media screen and (max-width: 499px) {
-/*------Profile Secion------*/
-
-/*------Menu Secion------*/
-    .nav-menu-content {
-        flex-direction: column;  
-    }
-
-/*-----Expandable Menu-----*/
-    .nav-menu-icon {
-        display: flex;
-    }
-
-    .nav-menu-content li {
-        display: none;
-    }
-
-    .nav-menu-icon a.icon {
-      float: right;
-      display: block;
-    }
-
-    .nav-menu-content.responsive {
-        position: relative;
-    }
-
-    .nav-menu-icon.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav-menu-content.responsive li {
-      float: none;
-      display: block;
-      text-align: left;
+    @media screen and (min-width: 500px) and (max-width: 899px) {
+        /*------Menu Section------*/
+        .nav-menu-icon {
+            display: none;
+        }
     }
 }

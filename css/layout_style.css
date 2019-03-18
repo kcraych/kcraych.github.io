@@ -101,6 +101,7 @@ Phones & Tablets
     }
     
     .container-nav {
+        flex-direction: column;
         height: 120px;
         justify-content: space-between;
     }
@@ -113,20 +114,4 @@ Phones & Tablets
         width: 100%;
         padding: 10px;
     }
-}
-
-/*-----------------------
-Tablets
------------------------*/
-@media screen and (min-width: 500px) and (max-width: 899px) {
-    .container-nav {
-        flex-direction: column;
-    }
-}
-
-/*-----------------------
-Phones
------------------------*/
-@media screen and (min-width: 499px) {
-
 }
