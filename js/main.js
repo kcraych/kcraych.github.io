@@ -6,9 +6,6 @@ $(document).ready(() => {
     $("#main-placeholder").load("home.html");
 });
 
-$(document).ready(() => {
-    document.getElementByClassName("menu-item").on('click',function (){
-        var idClicked = jQuery(this).attr('id');
-        $("#main-placeholder").load(idClicked + ".html");
-    });
-}); 
+function navClick(page) {
+    $("#main-placeholder").load(page + ".html");
+}
