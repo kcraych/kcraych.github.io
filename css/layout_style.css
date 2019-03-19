@@ -28,7 +28,7 @@ Common Attributes
 }
 
     .main-content p {
-        margin: 1.em 0px;
+        margin: 0.7em 0px;
     }
 
 .content-header {
@@ -75,6 +75,10 @@ Common Attributes
     .card-details {
         padding: 10px;
     }
+    
+        .card-details li {
+            margin: 10px;
+        }
 
 /*-----------------------
 Laptop
