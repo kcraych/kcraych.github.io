@@ -45,14 +45,11 @@ Common Attributes
     list-style: none;
 }
 
-.menu-item a {
+.menu-item {
     color: #fff;
     font-size: 0.9rem;
     text-decoration: none;
     padding: 3px 10px;
-}
-
-.menu-link a {
     cursor: pointer;
 }
 
