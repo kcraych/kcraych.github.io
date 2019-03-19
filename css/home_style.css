@@ -1,7 +1,7 @@
 /*-----------------
 Common Attributes
 -------------------*/
-.container-home {
+.home-content {
     display: flex;  
     height: 100vh;
     background-color: rgba(0,0,0,0.15);
@@ -12,7 +12,7 @@ Common Attributes
     transform: scale(1.0, 0.8);
 }
 
-.container-home span {
+.home-content p span {
     font-weight: 600;
 }
 
@@ -20,7 +20,7 @@ Common Attributes
 Laptop
 -------------------*/
 @media screen and (min-width: 900px) {
-    .container-home {
+    .home-content {
         flex: 1;
         padding: 20px;
         font-size: 1.1rem;
@@ -32,7 +32,7 @@ Laptop
 Phones & Tablet
 -------------------*/
 @media screen and (max-width: 899px) {
-    .container-home {
+    .home-content {
         text-align: center;
         width: 100%;
         padding: 10px;
