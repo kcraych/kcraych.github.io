@@ -1,0 +1,52 @@
+.content-card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 20px 10px;
+    box-shadow: 3px 3px 10px gray;
+    background-color: #fff;
+}
+
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+    }
+
+        .card-header a {
+            text-decoration: none;
+        }
+
+    .card-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+        .card-content__skill-img img {
+            max-width: 50px;
+        }
+
+        .card-content__project-img {
+            padding: 20px;
+        }
+
+            .card-content__project-img img {
+                max-width: 100px;
+                filter: gray; /* IE6-9 */
+                -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+                filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+            }
+
+        .card-content__details {
+            padding: 10px 20px;
+        }
+    
+            .card-content__details li {
+                margin-left: 20px;
+            }
