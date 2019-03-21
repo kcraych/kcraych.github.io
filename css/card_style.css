@@ -43,9 +43,13 @@
     overflow: visible;
 }
 
-.card-thumb__large {
+.card-thumb__medium {
     max-width: 100px;
     position: center;
+}
+
+.card-thumb__large {
+    height: 100%;
 }
 
     .card-thumb__small img, .card-thumb__large img {
