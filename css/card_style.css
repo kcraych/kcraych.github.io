@@ -45,6 +45,7 @@
 
 .card-thumb__large {
     max-width: 100px;
+    position: center;
 }
 
     .card-thumb__small img, .card-thumb__large img {
@@ -72,6 +73,6 @@ Phones
 -----------------------*/
 @media screen and (max-width: 499px) {
     .card-thumb__large {
-        display: hidden;
+        visibility: hidden;
     }
 }
