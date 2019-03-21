@@ -54,7 +54,7 @@
 
     .card-thumb__small img, .card-thumb__large img {
         width: 90%;
-        object-fit: cover;
+        object-fit: fill;
     }
 
 .card-thumb__grayscale {
