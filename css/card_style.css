@@ -73,6 +73,6 @@ Phones
 -----------------------*/
 @media screen and (max-width: 499px) {
     .card-thumb__large {
-        visibility: none;
+        display: none;
     }
 }
