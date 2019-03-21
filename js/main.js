@@ -3,9 +3,14 @@ $(document).ready(() => {
 });
 
 $(document).ready(() => {
-    $("#main-placeholder").load("home.html");
+    $("#full-placeholder").load("home.html");
 });
 
 function navClick(page) {
-    $("#main-placeholder").load(page + ".html");
+    $("#full-placeholder").load(page + ".html");
+    var classUpdate = "container-full"
+    if (page != "home") {
+        var classUpdate = classUpdate + " bg-dk-gray"
+    }
+    document.getElementById("full-placeholder").className = classUpdate;
 }

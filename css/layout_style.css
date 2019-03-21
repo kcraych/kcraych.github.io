@@ -1,7 +1,7 @@
 /*-----------------------
 Common Attributes
 -----------------------*/
-.container-full {
+.container-bg {
     display: flex;
     flex-wrap: wrap;
     background: url(../images/backgrounds/mountains/mountains2.jpg) no-repeat center center fixed;
@@ -16,30 +16,26 @@ Common Attributes
     padding: 5px;
 }
 
-.container-main {
+.container-full {
     display: flex;
     flex: 1;
 }
 
-.main-content {
+.container-main {
     display: flex;
     flex-direction: column;
     background-color: rgb(235, 232, 232);
 }
 
-    .main-content p {
+    .container-main h1 {
+        text-shadow: 2px 2px 2px lightgray;
+    }
+
+    .container-main p {
         margin: 0.7em 0px;
     }
 
-.content-header {
-    text-shadow: 2px 2px 2px lightgray;
-}
-
-.content-intro {
-    margin: 10px 0px;
-}
-
-    .content-intro span {
+    .container-main span {
         font-weight: 800;
     }        
 
@@ -52,11 +48,11 @@ Laptop
         width: 20%;
     }
 
-    .container-main {
+    .container-full {
         min-height: 100%;
     }
 
-    .main-content {
+    .container-main {
         min-height: 100%;
         max-width: 900px;
         padding: 30px;
@@ -67,7 +63,7 @@ Laptop
 Phones & Tablets
 -----------------------*/
 @media screen and (max-width: 899px) {
-    .container-full {
+    .container-bg {
         flex-direction: column;
     }
     
@@ -77,11 +73,11 @@ Phones & Tablets
         justify-content: space-between;
     }
 
-    .container-main {
+    .container-full {
         width: 100%;
     }
 
-    .main-content {
+    .container-main {
         width: 100%;
         padding: 10px;
     }
