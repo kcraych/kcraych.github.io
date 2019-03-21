@@ -66,3 +66,12 @@
     .card-content li {
         margin-left: 20px;
     }
+
+/*-----------------------
+Phones
+-----------------------*/
+@media screen and (max-width: 499px) {
+    .card-thumb__large {
+        display: hidden;
+    }
+}
