@@ -45,15 +45,14 @@
 
 .card-thumb__medium {
     max-width: 100px;
-    position: center;
 }
 
 .card-thumb__large {
-    height: 100%;
+    max-width: 200px;
 }
 
     .card-thumb__small img, .card-thumb__large img {
-        height: 90%;
+        width: 90%;
         object-fit: cover;
     }
 
