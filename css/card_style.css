@@ -53,8 +53,8 @@
 }
 
     .card-thumb__small img, .card-thumb__large img {
-        width: 90%;
-        object-fit: fill;
+        height: 90%;
+        object-fit: cover;
     }
 
 .card-thumb__grayscale {
