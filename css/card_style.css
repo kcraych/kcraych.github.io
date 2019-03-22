@@ -47,10 +47,6 @@
     max-width: 100px;
 }
 
-.card-thumb__large {
-    max-width: 200px;
-}
-
     .card-thumb__small img, .card-thumb__medium img, .card-thumb__large img {
         width: 90%;
         object-fit: cover;
