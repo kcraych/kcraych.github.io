@@ -51,7 +51,8 @@
 }
 
 .card-thumb__medium {
-    width: 150px;
+    min-height: 70px;
+    width: 100px;
 }
 
 .card-thumb__large {
