@@ -42,7 +42,7 @@
     float: left;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .card-thumb__small {
@@ -51,17 +51,12 @@
 }
 
 .card-thumb__medium {
-    width: 100px;
+    width: 150px;
 }
 
 .card-thumb__large {
-    width: 300px;
+    width: 600px;
 }
-
-    /*.card-thumb__small img, .card-thumb__medium img, .card-thumb__large img {
-        width: 90%;
-        object-fit: cover;
-    }*/
 
 .card-thumb__grayscale {
     filter: gray; /* IE6-9 */
