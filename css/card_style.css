@@ -56,7 +56,7 @@
 }
 
 .card-thumb__large {
-    max-width: 200px;
+    width: 100%;
 }
 
     /*.card-thumb__small img, .card-thumb__medium img, .card-thumb__large img {
