@@ -37,6 +37,14 @@
     justify-content: space-evenly;
 }
 
+.card-thumb {
+    position: relative;
+    float: left;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .card-thumb__small {
     max-width: 50px;
     text-align: center;
@@ -48,13 +56,13 @@
 }
 
 .card-thumb__large {
-    max-height: 90%;
+    max-width: 200px;
 }
 
-    .card-thumb__small img, .card-thumb__medium img, .card-thumb__large img {
+    /*.card-thumb__small img, .card-thumb__medium img, .card-thumb__large img {
         width: 90%;
         object-fit: cover;
-    }
+    }*/
 
 .card-thumb__grayscale {
     filter: gray; /* IE6-9 */
