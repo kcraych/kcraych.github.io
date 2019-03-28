@@ -48,15 +48,14 @@
 .card-thumb__small {
     max-width: 50px;
     text-align: center;
-    overflow: visible;
 }
 
 .card-thumb__medium {
-    max-width: 100px;
+    width: 100px;
 }
 
 .card-thumb__large {
-    width: 100%;
+    width: 300px;
 }
 
     /*.card-thumb__small img, .card-thumb__medium img, .card-thumb__large img {
