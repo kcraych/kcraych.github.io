@@ -42,21 +42,23 @@
     float: left;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .card-thumb__small {
     max-width: 50px;
+    background-size: contain;
     text-align: center;
 }
 
 .card-thumb__medium {
     min-height: 70px;
+    background-size: contain;
     width: 100px;
 }
 
 .card-thumb__large {
-    width: 600px;
+    width: 170px;
+    background-size: cover;
 }
 
 .card-thumb__grayscale {
