@@ -37,6 +37,12 @@
     justify-content: space-evenly;
 }
 
+.icon-bar__stack {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 .card-thumb {
     position: relative;
     float: left;
@@ -47,7 +53,6 @@
 .card-thumb__small {
     max-width: 50px;
     background-size: contain;
-    text-align: center;
 }
 
 .card-thumb__medium {
