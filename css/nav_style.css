@@ -28,9 +28,9 @@ Common Attributes
     height: auto;
 }
 
-.nav-contacts i {
+.nav-contacts a {
     align-self: center;
-    margin: 3px 5px;
+    padding: 3px 5px;
     width: 50px;
 }
 
